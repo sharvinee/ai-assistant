@@ -1,0 +1,18 @@
+# Database files
+rag_app.db
+chroma_db/*.bin
+chroma_db/*.sqlite3
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Log files
+*.log
+
+# Environment and credentials files
+credentials.env
+
+# Sensitive documents
+docs/doctors_of_horizon.docx
+docs/Horizon_Clinic.docx
