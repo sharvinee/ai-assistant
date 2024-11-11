@@ -17,18 +17,18 @@ This is an AI Clinic Assistant chatbot for a fictional clinic called, 'Horizon I
 1. Clone the repository.
 2. Install required dependencies
 ```bash
-pip install -r requirements.txt)
-```bash
+pip install -r requirements.txt
+```
 
 3. Run FastAPI
 ```bash
 uvicorn main:app --reload
-```bash
+```
 
 4. Run the Streamlit app
 ```bash
 streamlit run clinic_AI.py
-```bash
+```
 
 
 ## Usage Instruction: 
@@ -62,14 +62,14 @@ Clone Your Forked Repository:
 ```bash
 git clone https://github.com/sharvinee/HorizonClinic_AI
 cd HorizonClinic_AI
-```bash
+```
 
 2. Create a Branch:
 
 Use a descriptive name for your branch.
 ```bash
 git checkout -b feature/your-feature-name
-```bash
+```
 
 3. Make Your Changes:
 
@@ -82,11 +82,12 @@ Test your changes thoroughly.
 Write clear, concise commit messages.
 ```bash
 git commit -m "Add brief description of changes"
-```bash
+```
 
 Push Your Branch to GitHub:
 ```bash
 git push origin feature/your-feature-name
+```
 
 5. Open a Pull Request:
 
