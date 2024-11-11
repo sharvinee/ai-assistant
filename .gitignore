@@ -12,7 +12,3 @@ __pycache__/
 
 # Environment and credentials files
 credentials.env
-
-# Sensitive documents
-docs/doctors_of_horizon.docx
-docs/Horizon_Clinic.docx
