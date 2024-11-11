@@ -7,6 +7,8 @@ from typing import List
 from langchain_core.documents import Document
 import os
 from chroma_utils import vectorstore
+
+# Retrieve top 2 results
 retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
 output_parser = StrOutputParser()
@@ -27,9 +29,12 @@ contextualize_q_prompt = ChatPromptTemplate.from_messages([
 ])
 
 
-
 qa_prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a helpful AI assistant. Use the following context to answer the user's question."),
+    ("system", """
+     You are a helpful AI clinic assistant for Horizon Internal Medicine Clinic. 
+     If you do not have an answer for a question asked by the user, do not speculate. 
+     Inform the user to contact the clinic for further information. 
+     Use the following context to answer the user's question."""),
     ("system", "Context: {context}"),
     MessagesPlaceholder(variable_name="chat_history"),
     ("human", "{input}")
