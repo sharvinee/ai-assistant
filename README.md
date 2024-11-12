@@ -98,6 +98,7 @@ Keep code readable and maintainable.
 Add comments where necessary for clarity.
 Include unit tests if applicable.
 
+
 ## Reporting Issues
 If you find a bug or have an idea for a new feature, please open an issue. When reporting an issue, be as detailed as possible and include steps to reproduce the problem.
 
