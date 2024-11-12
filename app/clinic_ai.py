@@ -17,7 +17,7 @@ st.markdown(
 )
 
 st.markdown('<h1 class="title">🩺 Horizon Internal Medicine Clinic AI Assistant</h1>', unsafe_allow_html=True)
-st.markdown('<h4 class="title">Your one stop information center about all the things you need to know about the clinic!</h4>', unsafe_allow_html=True)
+st.markdown('<h5 class="title">"Access All the Clinic Information You Need - No Wait, No Hassle"</h5>', unsafe_allow_html=True)
 
 
 # Initialize session state variables
