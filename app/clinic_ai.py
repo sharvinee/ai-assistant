@@ -4,6 +4,7 @@ from chat_interface import display_chat_interface
 #Configure streamlit app
 st.set_page_config(page_title="Horizon Internal Medicine Clinic", page_icon="⚕", layout = "centered")
 
+
 # Custom CSS to align the title
 st.markdown(
     """
