@@ -1,6 +1,6 @@
 # Database files
 rag_app.db
-chroma_db/
+api/chroma_db/
 
 # Compiled Python files
 __pycache__/
