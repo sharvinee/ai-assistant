@@ -14,3 +14,6 @@ __pycache__/
 credentials.env
 
 venv/
+
+# Others
+app/images
