@@ -1,6 +1,6 @@
 # HorizonClinic_AI
 
-This is an AI Clinic Assistant chatbot for a fictional clinic called, 'Horizon Internal Medicine Clinic'. The chatbot is designed to reduce administrative burdens by allowing users to obtain information about the clinic and appointments simply by interacting with the AI Clinic Assistant. 
+This is an AI Clinic Assistant chatbot for a fictional clinic called, 'Horizon Internal Medicine Clinic'. This tool acts as a virtual front desk staff, providing patients and caregivers with quick information regarding the clinic and its doctors, reducing the need for extra staff to handle calls and basic queries.
 
 ![alt text](img/demo.png "demo")
 
