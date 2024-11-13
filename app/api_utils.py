@@ -16,7 +16,7 @@ def get_api_response(question, session_id, model):
         data["session_id"] = session_id
 
     try:
-        response = requests.post("http://localhost:8000/chat", headers=headers, json=data)
+        response = requests.post("https://horizon-fastapi.onrender.com/chat", headers=headers, json=data)  # http://localhost:8000/chat
         if response.status_code == 200:
             return response.json()
         else:
@@ -30,7 +30,7 @@ def get_api_response(question, session_id, model):
 # Define function to retrieve list of documents from the API
 def list_documents():
     try:
-        response = requests.get("http://localhost:8000/list-docs")
+        response = requests.get("https://horizon-fastapi.onrender.com/list-docs")
         if response.status_code == 200:
             return response.json()
         else:
@@ -50,7 +50,7 @@ def delete_document(file_id):
     data = {"file_id": file_id}
 
     try:
-        response = requests.post("http://localhost:8000/delete-doc", headers=headers, json=data)
+        response = requests.post("https://horizon-fastapi.onrender.com/delete-doc", headers=headers, json=data)
         if response.status_code == 200:
             return response.json()
         else:
