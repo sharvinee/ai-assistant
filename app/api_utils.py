@@ -1,6 +1,11 @@
 import requests
 import streamlit as st
+import os
+from dotenv import load_dotenv
 
+load_dotenv(dotenv_path=r"..\host.env")
+
+host = os.getenv(key='host')
 
 # Define function to send user's question to API endpoint to get response from AI model
 def get_api_response(question, session_id, model):
@@ -16,7 +21,7 @@ def get_api_response(question, session_id, model):
         data["session_id"] = session_id
 
     try:
-        response = requests.post("https://horizon-fastapi.onrender.com/chat", headers=headers, json=data)  # http://localhost:8000/chat
+        response = requests.post(host + "/chat", headers=headers, json=data)  # http://localhost:8000/chat https://horizon-fastapi.onrender.com/chat
         if response.status_code == 200:
             return response.json()
         else:
@@ -30,7 +35,7 @@ def get_api_response(question, session_id, model):
 # Define function to retrieve list of documents from the API
 def list_documents():
     try:
-        response = requests.get("https://horizon-fastapi.onrender.com/list-docs")
+        response = requests.get(host + "/list-docs")
         if response.status_code == 200:
             return response.json()
         else:
@@ -50,7 +55,7 @@ def delete_document(file_id):
     data = {"file_id": file_id}
 
     try:
-        response = requests.post("https://horizon-fastapi.onrender.com/delete-doc", headers=headers, json=data)
+        response = requests.post(host + "/delete-doc", headers=headers, json=data)
         if response.status_code == 200:
             return response.json()
         else:
