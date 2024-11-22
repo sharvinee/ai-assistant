@@ -6,7 +6,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from typing import List
 from langchain_core.documents import Document
 import os
-from api.chroma_utils import vectorstore
+from chroma_utils import vectorstore
 
 # Retrieve top 2 results
 retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
